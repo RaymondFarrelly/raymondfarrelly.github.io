@@ -4,10 +4,22 @@
   type="text/javascript">
 </script>
 <script>
-  window.DD_RUM && window.DD_RUM.init({
-    clientToken: 'pub3f74a44d234e062184b3af33720130b9',
-    applicationId: '74ced99f-264f-4125-85c3-06be3398acb8',
-  });
+dangerouslySetInnerHTML=
+(function(h,o,u,n,d) {
+h=h[d]=h[d]||{q:[],onReady:function(c){h.q.push(c)}}
+d=o.createElement(u);d.async=1;d.src=n
+n=o.getElementsByTagName(u)[0];n.parentNode.insertBefore(d,n)
+})(window,document,'script','https://www.datadoghq-browser-agent.com/datadog-rum.js','DD_RUM')
+DD_RUM.onReady(function() {
+DD_RUM.init({
+      clientToken: 'pubfadd792255c8a8921a1dcea5bd0117e0',
+      applicationId: '17b1d2d3-f832-4fac-bf3b-e54d4269d72d',
+      site: 'datadoghq.com',
+version: '1.0.4',
+sampleRate: 100,
+trackInteractions: true
+})
+})
 </script>
 <html>
 <h1 >You did it!</h1>
